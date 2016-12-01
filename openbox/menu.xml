@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="Terminal">
+			<action name="Execute">
+				<execute>terminator</execute>
+			</action>
+		</item>
+		<item label="Firefox">
+			<action name="Execute">
+				<execute>firefox</execute>
+			</action>
+		</item>
+		<item label="Chromium">
+			<action name="Execute">
+				<execute>chromium-browser</execute>
+			</action>
+		</item>
+		<item label="VS Code">
+			<action name="Execute">
+				<execute>code</execute>
+			</action>
+		</item>
+		<item label="Arduino IDE">
+			<action name="Execute">
+				<execute>/home/kbono/Downloads/arduino-1.6.11/arduino</execute>
+			</action>
+		</item>
+		<!-- This requires the presence of the 'menu' package to work -->
+		<menu id="root-menu-174955" label="Dir">
+			<item label="~">
+				<action name="Execute">
+					<execute>thunar ~/</execute>
+				</action>
+			</item>
+			<item label="/var/www">
+				<action name="Execute">
+					<execute>thunar /var/www</execute>
+				</action>
+			</item>
+			<item label="Arduino Projects">
+				<action name="Execute">
+					<execute>thunar ~/Arduino/projects</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu id="client-list-menu"/>
+		<separator/>
+		<menu id="root-menu-285218" label="Openbox">
+			<item label="ObConf">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
+			<item label="Obmenu">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+			<item label="Reconfigure">
+				<action name="Reconfigure"/>
+			</item>
+			<item label="Restart obox">
+				<action name="Restart"/>
+			</item>
+		</menu>
+		<separator/>
+		<item label="Exit">
+			<action name="Exit"/>
+		</item>
+	</menu>
+</openbox_menu>
